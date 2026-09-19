@@ -15,6 +15,8 @@ const number = (value?: number) => value == null ? '—' : new Intl.NumberFormat
 const labels: Record<string, string> = { confirmed: 'Secret quest', candidate: 'Candidate', unconfirmed: 'Reference only', provided: 'Hub badge', 'user-confirmed': 'Confirmed by you' };
 const time = (value: string | null) => value ? new Date(value).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }) : 'Waiting for Roblox';
 const PREF_KEY = 'roblox20-badge-choices-v1';
+const COMPLETED_KEY = 'roblox20-badge-completed-v1';
+const HIDE_COMPLETED_KEY = 'roblox20-hide-completed-v1';
 const gameUniverseIds = new Set(catalog.badges.filter(b => b.group === 'game').map(b => b.universeId));
 
 function Identity({ row }: { row: Row }) {
@@ -39,6 +41,8 @@ export default function Home() {
   const prefsRef = useRef<Record<string, Preference>>({});
   const choiceVersion = useRef(0);
   const [notice, setNotice] = useState('');
+  const [completed, setCompleted] = useState<Record<string, boolean>>({});
+  const [hideCompleted, setHideCompleted] = useState(false);
   const [editing, setEditing] = useState<Row | null>(null);
   const [badgeInput, setBadgeInput] = useState('');
   const [markConfirmed, setMarkConfirmed] = useState(true);
@@ -90,6 +94,13 @@ export default function Home() {
         if (gameUniverseIds.has(universeId) && choice && typeof choice.badgeId === 'string' && /^[1-9]\d{0,19}$/.test(choice.badgeId) && typeof choice.confirmed === 'boolean') valid[universeId] = choice;
       }
       prefsRef.current = valid; setPreferences(valid);
+      const savedCompleted = JSON.parse(localStorage.getItem(COMPLETED_KEY) ?? '{}');
+      const validCompleted: Record<string, boolean> = {};
+      if (savedCompleted && typeof savedCompleted === 'object' && !Array.isArray(savedCompleted)) for (const [badgeId, value] of Object.entries(savedCompleted)) {
+        if (/^[1-9]\d{0,19}$/.test(badgeId) && value === true) validCompleted[badgeId] = true;
+      }
+      setCompleted(validCompleted);
+      setHideCompleted(localStorage.getItem(HIDE_COMPLETED_KEY) === '1');
     } catch { setNotice('Browser storage is unavailable. Choices will last for this session.'); }
     void refresh();
     const tick = setInterval(() => {
@@ -171,6 +182,16 @@ export default function Home() {
     const url = URL.createObjectURL(new Blob([contents], { type: format === 'json' ? 'application/json' : 'text/csv;charset=utf-8' }));
     const link = document.createElement('a'); link.href = url; link.download = `roblox20-badges.${format}`; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
+  function setCompletedBadge(badgeId: string, checked: boolean) {
+    const next = checked ? { ...completed, [badgeId]: true } : Object.fromEntries(Object.entries(completed).filter(([id]) => id !== badgeId));
+    setCompleted(next);
+    try { localStorage.setItem(COMPLETED_KEY, JSON.stringify(next)); } catch {}
+  }
+  function setHideCompletedPreference(value: boolean) {
+    setHideCompleted(value);
+    try { localStorage.setItem(HIDE_COMPLETED_KEY, value ? '1' : '0'); } catch {}
+  }
+  const visibleGameRows = hideCompleted ? gameRows.filter(row => !row.badgeId || !completed[row.badgeId]) : gameRows;
   return <>
     <header className="site-header">
       <a href="/" className="brand" aria-label="The Hunt 20 badge watch home"><span className="brand-mark">20</span><span>THE HUNT<span className="brand-sub">BADGE WATCH</span></span></a>
@@ -189,12 +210,14 @@ export default function Home() {
         <div className="tabs-row"><TabsList className="tab-list"><TabsTrigger value="games">Game badges <span>20</span></TabsTrigger><TabsTrigger value="hub">Hub badges <span>20</span></TabsTrigger></TabsList><span className="record-count">40 BADGES TRACKED</span></div>
         <TabsContent value="games">
           <div className="section-summary"><h2>Follow the fragments</h2><div className="legend"><span><i className="confirmed-dot" />{confirmed} identified</span><span><i className="candidate-dot" />{candidates} candidates</span><span><i className="reference-dot" />{20 - confirmed - candidates} reference only</span></div></div>
+          <label className="confirm-checkbox"><Checkbox checked={hideCompleted} onCheckedChange={value => setHideCompletedPreference(value === true)} />Hide completed badges</label>
           <p className="catalog-note">New, obscurely named badges are likely secret candidates, with an uncertainty note. “Reference only” means no secret badge was identified. New badges are checked every minute.</p>
           <div className="activity-key"><span><i />{highlighted} candidate or secret badges with more than 2 awards</span><span>Your confirmations and badge choices are saved in this browser.</span></div>
-          <div className="table-wrap"><table><caption className="sr-only">Event game badge award counts. Candidate and reference badges are not confirmed secret quests.</caption><thead><tr><th>EVENT GAME / BADGE</th><th>IDENTIFICATION</th><th className="numeric">TOTAL AWARDED</th><th className="numeric">PAST 24 HOURS</th><th>YOUR CHOICE</th></tr></thead><tbody>{gameRows.map(row => <tr key={row.universeId} className={`${row.stale ? 'stale-row' : ''} ${row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) > 2 ? 'active-badge' : ''}`}>
+          <div className="table-wrap"><table><caption className="sr-only">Event game badge award counts. Candidate and reference badges are not confirmed secret quests.</caption><thead><tr><th>EVENT GAME / BADGE</th><th>IDENTIFICATION</th><th className="numeric">TOTAL AWARDED</th><th className="numeric">PAST 24 HOURS</th><th>COMPLETED</th><th>YOUR CHOICE</th></tr></thead><tbody>{visibleGameRows.map(row => <tr key={row.universeId} className={`${row.stale ? 'stale-row' : ''} ${row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) > 2 ? 'active-badge' : ''}`}>
             <td><div className="game-cell"><div className="game-visual"><GameIcon src={icons[row.universeId]} name={row.game} /><span className="year">{row.year}</span></div><div className="badge-description"><a className="game-name" href={row.gameUrl} target="_blank" rel="noreferrer">{row.game}<ArrowUpRight size={13} /></a><a className="badge-name" href={row.badgeUrl ?? row.gameUrl} target="_blank" rel="noreferrer">{row.data?.name ?? row.badgeName}</a><span className="badge-id">{row.badgeId ?? 'No public badge'} · {row.data ? (row.data.enabled ? 'Enabled' : 'Disabled') : 'Loading'}</span>{row.stale && <span className="stale-note" title={row.error ?? ''}>{row.data ? `Stale · last updated ${time(row.fetchedAt ?? null)}` : 'Unavailable · retrying next refresh'}</span>}</div></div></td>
             <td><Identity row={row} /><details className="badge-note"><summary>Why this badge?</summary><p>{row.note}</p>{row.discoveryError && <p>{row.discoveryError}</p>}</details>{row.isNewest === false && <span className="selection-note">Newer badge excluded</span>}</td>
             <td className="numeric"><span className="total-value">{number(row.data?.statistics.awardedCount)}</span>{row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) > 2 && <span className="award-signal">3+ awarded</span>}</td><td className="numeric"><span className="day-value">{number(row.data?.statistics.pastDayAwardedCount)}</span></td>
+            <td className="row-actions"><Checkbox checked={!!row.badgeId && !!completed[row.badgeId]} onCheckedChange={value => row.badgeId && setCompletedBadge(row.badgeId, value === true)} aria-label={`Mark ${row.game} as completed`} disabled={!row.badgeId} /></td>
             <td className="row-actions">{row.status === 'candidate' && <Button variant="outline" size="sm" onClick={() => confirm(row)} disabled={!row.data || row.stale} aria-label={`Confirm ${row.game} badge`}><Check />Confirm</Button>}{row.status === 'user-confirmed' && <span className="your-confirmation"><Check size={15} />Saved</span>}<Button variant="ghost" size="sm" onClick={() => openEditor(row)} aria-label={`${row.status === 'unconfirmed' ? 'Add' : 'Change'} badge for ${row.game}`}>{row.status === 'unconfirmed' ? <Plus /> : <Pencil />}{row.status === 'unconfirmed' ? 'Add badge' : 'Change'}</Button>{preferences[row.universeId] && <button className="reset-choice" onClick={() => reset(row)} aria-label={`Reset ${row.game} badge choice`}>Reset choice</button>}</td>
           </tr>)}</tbody></table></div>
         </TabsContent>
