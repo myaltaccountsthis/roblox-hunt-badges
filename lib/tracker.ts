@@ -56,7 +56,7 @@ export async function validateBadge(universeId: string, badgeId: string) {
 export async function applySelections(snapshot: Snapshot, selections: { universeId: string; badgeId: string }[]): Promise<Snapshot> {
   const customEntries = selections.map(({ universeId, badgeId }) => {
     const base = snapshot.badges.find(b => b.group === 'game' && b.universeId === universeId)!;
-    return { ...base, badgeId, badgeName: badgeId === base.badgeId ? base.badgeName : 'Selected badge', badgeUrl: `https://www.roblox.com/badges/${badgeId}`, status: 'candidate', note: 'Manually selected in this browser. Secret-quest identification is based on the user selection.', isNewest: undefined, created: undefined };
+    return { ...base, badgeId, badgeName: badgeId === base.badgeId ? base.badgeName : 'Selected badge', badgeUrl: `https://www.roblox.com/badges/${badgeId}`, status: badgeId === base.badgeId && base.status === 'confirmed' ? 'confirmed' : 'candidate', note: badgeId === base.badgeId && base.status === 'confirmed' ? base.note : 'Manually selected in this browser. Secret-quest identification is based on the user selection.', isNewest: undefined, created: undefined };
   });
   const customRows: BadgeRow[] = await fetchBadges(customEntries);
   return { ...snapshot, badges: snapshot.badges.map(row => customRows.find(custom => custom.universeId === row.universeId) ?? row) };

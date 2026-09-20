@@ -34,7 +34,7 @@ The 20 S-badges are awarded by the event hub. Their numbers do not establish whi
 | 2701017739640148 | Sword Fights on the Heights IV | Secret Quest: The Signature Shedletsky Secret | confirmed |
 | 957969410424528 | Rocket Arena | Secret Quest: Rocket Arena Rocket Run | confirmed |
 | 3462700280399954 | Chaos Canyon | Secret Quest: Chaos Canyon Chaos | confirmed |
-| 1139187141620288 | Work at a Pizza Place | honeypot | candidate |
+| 1139187141620288 | Work at a Pizza Place | honeypot | confirmed |
 | 1348867724098929 | Natural Disaster Survival | Roblox 20 Secret Quest - Hat Donation Box | confirmed |
 | 4449519854199008 | Base Wars: The Land! | Completed The Hunt 20 Event! | unconfirmed |
 | 1985785484439323 | Apocalypse Rising 2 | Anniversary Survivor | unconfirmed |
@@ -44,10 +44,10 @@ The 20 S-badges are awarded by the event hub. Their numbers do not establish whi
 | 2956780634054386 | Jailbreak | Unknown R20 Badge | candidate |
 | 3440043305038685 | Build A Boat For Treasure | Test | candidate |
 | 2344531550519489 | Adopt Me! | Badge | candidate |
-| 2153489069 | World // Zero | Arcane Tower Champion | unconfirmed |
-| 3494811902417077 | Piggy | R20 - ??? | candidate |
+| 2124728600 | World // Zero | Magma Goo | candidate |
+| 3494811902417077 | Piggy | R20 - ??? | confirmed |
 | 2308865322054249 | Berry Avenue RP | Badge | candidate |
-| 1290359287112082 | Blade Ball | dsfsffda | candidate |
+| 1290359287112082 | Blade Ball | dsfsffda | confirmed |
 | 2648924952692335 | Dress To Impress | Completed 2 rounds of 2024 DTI | unconfirmed |
 | 3405135718228192 | Grow a Garden | Purchased Grandmaster Sprinkler! | candidate |
 
@@ -55,7 +55,7 @@ The 20 S-badges are awarded by the event hub. Their numbers do not establish whi
 - **Sword Fights on the Heights IV:** The current badge name or description explicitly identifies a secret quest.
 - **Rocket Arena:** The current badge name or description explicitly identifies a secret quest.
 - **Chaos Canyon:** The current badge name or description explicitly identifies a secret quest.
-- **Work at a Pizza Place:** Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.
+- **Work at a Pizza Place:** Secret quest badge confirmed and pinned against automatic discovery.
 - **Natural Disaster Survival:** The current badge name or description explicitly identifies a secret quest.
 - **Base Wars: The Land!:** No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.
 - **Apocalypse Rising 2:** No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.
@@ -65,9 +65,9 @@ The 20 S-badges are awarded by the event hub. Their numbers do not establish whi
 - **Jailbreak:** Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.
 - **Build A Boat For Treasure:** Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.
 - **Adopt Me!:** Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.
-- **World // Zero:** No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.
-- **Piggy:** Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.
+- **World // Zero:** Magma Goo was manually selected for World // Zero and is pinned against automatic discovery. Secret-quest role remains unconfirmed. This candidate is not the newest badge.
+- **Piggy:** Secret quest badge confirmed and pinned against automatic discovery.
 - **Berry Avenue RP:** Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.
-- **Blade Ball:** Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification. This candidate is not the newest badge.
+- **Blade Ball:** Secret quest badge confirmed and pinned against automatic discovery. This candidate is not the newest badge.
 - **Dress To Impress:** No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.
 - **Grow a Garden:** Newest badge created alongside another event-period badge. Secret-quest role is unconfirmed.

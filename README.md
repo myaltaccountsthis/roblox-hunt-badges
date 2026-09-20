@@ -67,3 +67,11 @@ Use **Confirm** to mark a candidate correct. Use **Add badge** on a reference ro
 Choices and confirmations are saved only in this browser's local storage and survive page reloads. They are included in dashboard CSV/JSON downloads. They are not shared across browsers and do not rewrite the CLI's catalog on disk. For local file updates, download the current catalog or run the scraper. Confirmed choices stay pinned when newer candidates appear.
 
 Reference-only game badges are excluded from award highlighting, regardless of their count. Highlighted game rows must be candidates, explicitly identified secret quests, or confirmed by you, with at least 3 awards. Supplied hub badges retain their award highlighting.
+
+
+## Local completion checklist
+
+Mark game or hub badges as completed using their checkbox. Completed hub badges have a green outline instead of the yellow award highlight. The shared **Hide completed badges** toggle filters both tabs; turn it off to uncheck a badge. Completion is keyed to the exact badge ID and saved with the hide preference in this browser only. No completion data is sent to Roblox or the server.
+
+
+For an explicit catalog selection, update both `badgeId` and `badgeUrl`, then set `pinned: true` in `data/badges.json`. Renaming `badgeName` alone does not change the Roblox badge being requested. Pinned entries survive dashboard refreshes and CLI discovery; set `pinned: false` to restore automatic selection. World // Zero is pinned to Magma Goo (`2124728600`).

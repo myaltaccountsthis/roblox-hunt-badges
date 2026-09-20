@@ -17,7 +17,13 @@ const quote = value => `"${String(value ?? '').replaceAll('"', '""')}"`;
 
 async function run() {
   let catalog;
-  try { catalog = args.has('--discover') ? await discover() : await readJson('badges.json'); }
+  try {
+    if (args.has('--discover')) {
+      let existing = [];
+      try { existing = (await readJson('badges.json')).badges; } catch (error) { if (error.code !== 'ENOENT') throw error; }
+      catalog = await discover(existing);
+    } else catalog = await readJson('badges.json');
+  }
   catch (error) { console.error(`Catalog discovery failed: ${error.message}. Existing files were not changed.`); process.exitCode = 1; return; }
   let previous = [];
   try { previous = (await readJson('snapshot.json')).badges; } catch { /* First run has no snapshot. */ }

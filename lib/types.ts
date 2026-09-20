@@ -6,7 +6,7 @@ export type BadgeData = {
 export type BadgeRow = {
   badgeId: string | null; badgeName: string; game: string; universeId: string; rootPlaceId: string; year: number | null;
   group: string; status: string; note: string; checkedAt: string; badgeUrl: string | null; gameUrl: string;
-  isNewest?: boolean; catalogCount?: number; created?: string | null; discoveryError?: string | null;
+  pinned?: boolean; isNewest?: boolean; catalogCount?: number; created?: string | null; discoveryError?: string | null;
   data?: BadgeData | null; fetchedAt?: string | null; stale?: boolean; error?: string | null;
 };
 export type Snapshot = { checkedAt: string; catalogCheckedAt: string; badges: BadgeRow[]; icons?: Record<string, string> };

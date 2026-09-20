@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-19T19:56:00.193Z",
+  "checkedAt": "2026-09-20T02:14:51.323Z",
   "catalogCheckedAt": "2026-09-19T19:55:59.165Z",
   "badges": [
     {
@@ -11,7 +11,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Classic: Crossroads",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/788444728772728",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -27,9 +27,9 @@
         "created": "2026-09-16T19:01:08.612+00:00",
         "updated": "2026-09-17T21:37:06.712+00:00",
         "statistics": {
-          "pastDayAwardedCount": 17479,
-          "awardedCount": 51804,
-          "winRatePercentage": 0.001
+          "pastDayAwardedCount": 133689,
+          "awardedCount": 136503,
+          "winRatePercentage": 0.012
         },
         "awardingUniverse": {
           "id": 10766456501,
@@ -37,7 +37,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.708Z",
+      "fetchedAt": "2026-09-20T02:14:50.015Z",
       "error": null,
       "stale": false
     },
@@ -50,7 +50,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Sword Fights on the Heights IV",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/854647440808329",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -76,7 +76,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.706Z",
+      "fetchedAt": "2026-09-20T02:14:50.030Z",
       "error": null,
       "stale": false
     },
@@ -89,7 +89,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Rocket Arena",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/2874537913586721",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -115,7 +115,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.711Z",
+      "fetchedAt": "2026-09-20T02:14:50.019Z",
       "error": null,
       "stale": false
     },
@@ -128,7 +128,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Chaos Canyon",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/197788328316229",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -154,7 +154,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.694Z",
+      "fetchedAt": "2026-09-20T02:14:50.029Z",
       "error": null,
       "stale": false
     },
@@ -167,7 +167,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Work at a Pizza Place",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/2237888773337343",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -183,9 +183,9 @@
         "created": "2026-09-16T19:01:37.842+00:00",
         "updated": "2026-09-17T21:37:50.554+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 7967,
+          "awardedCount": 9572,
+          "winRatePercentage": 0.001
         },
         "awardingUniverse": {
           "id": 10766456501,
@@ -193,7 +193,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.746Z",
+      "fetchedAt": "2026-09-20T02:14:50.148Z",
       "error": null,
       "stale": false
     },
@@ -206,7 +206,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Natural Disaster Survival",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/1439816114867036",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -222,9 +222,9 @@
         "created": "2026-09-16T19:01:44.685+00:00",
         "updated": "2026-09-17T21:37:59.767+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 15769,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 91032,
+          "awardedCount": 93177,
+          "winRatePercentage": 0.008
         },
         "awardingUniverse": {
           "id": 10766456501,
@@ -232,7 +232,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.747Z",
+      "fetchedAt": "2026-09-20T02:14:50.147Z",
       "error": null,
       "stale": false
     },
@@ -245,7 +245,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Base Wars: The Land!",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/2677851507722761",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -271,7 +271,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.759Z",
+      "fetchedAt": "2026-09-20T02:14:50.168Z",
       "error": null,
       "stale": false
     },
@@ -284,7 +284,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Apocalypse Rising 2",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/1719653187423190",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -310,7 +310,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.753Z",
+      "fetchedAt": "2026-09-20T02:14:50.182Z",
       "error": null,
       "stale": false
     },
@@ -323,7 +323,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Murder Mystery 2",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/2250297984172921",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -349,7 +349,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.801Z",
+      "fetchedAt": "2026-09-20T02:14:50.286Z",
       "error": null,
       "stale": false
     },
@@ -362,7 +362,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Lumber Tycoon 2",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/973955333235103",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -388,7 +388,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.799Z",
+      "fetchedAt": "2026-09-20T02:14:50.289Z",
       "error": null,
       "stale": false
     },
@@ -401,7 +401,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Roblox High School",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/1991530753845746",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -427,7 +427,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.791Z",
+      "fetchedAt": "2026-09-20T02:14:50.299Z",
       "error": null,
       "stale": false
     },
@@ -440,7 +440,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Jailbreak",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/2971308898705223",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -466,7 +466,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.809Z",
+      "fetchedAt": "2026-09-20T02:14:50.328Z",
       "error": null,
       "stale": false
     },
@@ -479,7 +479,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Build A Boat For Treasure",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/308225565184426",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -505,7 +505,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.839Z",
+      "fetchedAt": "2026-09-20T02:14:50.414Z",
       "error": null,
       "stale": false
     },
@@ -518,7 +518,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Adopt Me!",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/3162193440550804",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -544,7 +544,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.850Z",
+      "fetchedAt": "2026-09-20T02:14:50.424Z",
       "error": null,
       "stale": false
     },
@@ -557,7 +557,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "World // Zero",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/389109338362080",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -583,7 +583,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.855Z",
+      "fetchedAt": "2026-09-20T02:14:50.426Z",
       "error": null,
       "stale": false
     },
@@ -596,7 +596,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Piggy",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/1070119183239664",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -612,9 +612,9 @@
         "created": "2026-09-16T19:03:04.78+00:00",
         "updated": "2026-09-17T21:39:52.597+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 52197,
+          "awardedCount": 54006,
+          "winRatePercentage": 0.005
         },
         "awardingUniverse": {
           "id": 10766456501,
@@ -622,7 +622,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.852Z",
+      "fetchedAt": "2026-09-20T02:14:50.470Z",
       "error": null,
       "stale": false
     },
@@ -635,7 +635,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Berry Avenue RP",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/3178004040363002",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -661,7 +661,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.892Z",
+      "fetchedAt": "2026-09-20T02:14:50.540Z",
       "error": null,
       "stale": false
     },
@@ -674,7 +674,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Blade Ball",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/1246917220157214",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -690,8 +690,8 @@
         "created": "2026-09-16T19:03:18.469+00:00",
         "updated": "2026-09-17T21:40:07.715+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
+          "pastDayAwardedCount": 23,
+          "awardedCount": 34,
           "winRatePercentage": 0
         },
         "awardingUniverse": {
@@ -700,7 +700,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.893Z",
+      "fetchedAt": "2026-09-20T02:14:50.563Z",
       "error": null,
       "stale": false
     },
@@ -713,7 +713,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Dress To Impress",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/1301021780785777",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -739,7 +739,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.908Z",
+      "fetchedAt": "2026-09-20T02:14:50.557Z",
       "error": null,
       "stale": false
     },
@@ -752,7 +752,7 @@
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
       "year": null,
-      "note": "User-provided hub badge. The API identifies the event hub as the awarding game; S-number to featured-game mapping is not established.",
+      "note": "Grow a Garden",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "badgeUrl": "https://www.roblox.com/badges/3699804200217169",
       "gameUrl": "https://www.roblox.com/games/74205509034203",
@@ -778,7 +778,7 @@
           "rootPlaceId": 74205509034203
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.904Z",
+      "fetchedAt": "2026-09-20T02:14:50.608Z",
       "error": null,
       "stale": false
     },
@@ -794,7 +794,7 @@
       "note": "The current badge name or description explicitly identifies a secret quest.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 2,
-      "created": "2026-09-15T17:44:09.664+00:00",
+      "created": "2026-09-15T12:44:09.664-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/4181684440049565",
       "gameUrl": "https://www.roblox.com/games/1818",
@@ -811,9 +811,9 @@
         "created": "2026-09-15T17:44:09.664+00:00",
         "updated": "2026-09-19T01:34:16.619+00:00",
         "statistics": {
-          "pastDayAwardedCount": 28316,
-          "awardedCount": 66771,
-          "winRatePercentage": 0.029
+          "pastDayAwardedCount": 154230,
+          "awardedCount": 157445,
+          "winRatePercentage": 0.169
         },
         "awardingUniverse": {
           "id": 13058,
@@ -821,7 +821,7 @@
           "rootPlaceId": 1818
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.949Z",
+      "fetchedAt": "2026-09-20T02:14:50.672Z",
       "error": null,
       "stale": false
     },
@@ -837,7 +837,7 @@
       "note": "The current badge name or description explicitly identifies a secret quest.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 12,
-      "created": "2026-09-15T18:10:07.879+00:00",
+      "created": "2026-09-15T13:10:07.879-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/2701017739640148",
       "gameUrl": "https://www.roblox.com/games/47324",
@@ -864,7 +864,7 @@
           "rootPlaceId": 47324
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.948Z",
+      "fetchedAt": "2026-09-20T02:14:50.700Z",
       "error": null,
       "stale": false
     },
@@ -880,7 +880,7 @@
       "note": "The current badge name or description explicitly identifies a secret quest.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 2,
-      "created": "2026-09-15T17:43:29.674+00:00",
+      "created": "2026-09-15T12:43:29.674-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/957969410424528",
       "gameUrl": "https://www.roblox.com/games/25415",
@@ -907,7 +907,7 @@
           "rootPlaceId": 25415
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.946Z",
+      "fetchedAt": "2026-09-20T02:14:50.695Z",
       "error": null,
       "stale": false
     },
@@ -923,7 +923,7 @@
       "note": "The current badge name or description explicitly identifies a secret quest.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 2,
-      "created": "2026-09-15T17:49:25.125+00:00",
+      "created": "2026-09-15T12:49:25.125-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/3462700280399954",
       "gameUrl": "https://www.roblox.com/games/14403",
@@ -950,7 +950,7 @@
           "rootPlaceId": 14403
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.945Z",
+      "fetchedAt": "2026-09-20T02:14:50.746Z",
       "error": null,
       "stale": false
     },
@@ -960,32 +960,33 @@
       "rootPlaceId": "192800",
       "year": 2010,
       "badgeId": "1139187141620288",
-      "badgeName": "honeypot",
+      "badgeName": "Recipe Retribution",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed and pinned against automatic discovery.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 9,
-      "created": "2026-09-03T18:36:20.812+00:00",
+      "created": "2026-09-03T13:36:20.812-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/1139187141620288",
       "gameUrl": "https://www.roblox.com/games/192800",
       "discoveryError": null,
+      "pinned": true,
       "data": {
         "id": 1139187141620288,
-        "name": "honeypot",
-        "description": null,
-        "displayName": "honeypot",
-        "displayDescription": null,
+        "name": "Recipe Retribution",
+        "description": "You did what you had to do.",
+        "displayName": "Recipe Retribution",
+        "displayDescription": "You did what you had to do.",
         "enabled": true,
-        "iconImageId": 118488295868225,
-        "displayIconImageId": 118488295868225,
+        "iconImageId": 81623396698462,
+        "displayIconImageId": 81623396698462,
         "created": "2026-09-03T18:36:20.812+00:00",
-        "updated": "2026-09-18T05:48:15.348+00:00",
+        "updated": "2026-09-20T00:39:45.358+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 9769,
+          "awardedCount": 11667,
+          "winRatePercentage": 0.006
         },
         "awardingUniverse": {
           "id": 47545,
@@ -993,7 +994,7 @@
           "rootPlaceId": 192800
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.991Z",
+      "fetchedAt": "2026-09-20T02:14:50.808Z",
       "error": null,
       "stale": false
     },
@@ -1009,7 +1010,7 @@
       "note": "The current badge name or description explicitly identifies a secret quest.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 25,
-      "created": "2026-09-04T05:13:09.676+00:00",
+      "created": "2026-09-04T00:13:09.676-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/1348867724098929",
       "gameUrl": "https://www.roblox.com/games/189707",
@@ -1026,9 +1027,9 @@
         "created": "2026-09-04T05:13:09.676+00:00",
         "updated": "2026-09-19T19:13:20.033+00:00",
         "statistics": {
-          "pastDayAwardedCount": 1,
-          "awardedCount": 23466,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 108300,
+          "awardedCount": 111042,
+          "winRatePercentage": 0.08
         },
         "awardingUniverse": {
           "id": 65241,
@@ -1036,7 +1037,7 @@
           "rootPlaceId": 189707
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.986Z",
+      "fetchedAt": "2026-09-20T02:14:50.842Z",
       "error": null,
       "stale": false
     },
@@ -1052,7 +1053,7 @@
       "note": "No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 37,
-      "created": "2026-09-03T04:53:43.89+00:00",
+      "created": "2026-09-02T23:53:43.89-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/4449519854199008",
       "gameUrl": "https://www.roblox.com/games/18164449",
@@ -1069,8 +1070,8 @@
         "created": "2026-09-03T04:53:43.89+00:00",
         "updated": "2026-09-17T20:48:35.674+00:00",
         "statistics": {
-          "pastDayAwardedCount": 944470,
-          "awardedCount": 2052260,
+          "pastDayAwardedCount": 797455,
+          "awardedCount": 2215413,
           "winRatePercentage": 1
         },
         "awardingUniverse": {
@@ -1079,7 +1080,7 @@
           "rootPlaceId": 18164449
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.004Z",
+      "fetchedAt": "2026-09-20T02:14:50.837Z",
       "error": null,
       "stale": false
     },
@@ -1095,7 +1096,7 @@
       "note": "No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 3,
-      "created": "2026-09-03T18:37:48.804+00:00",
+      "created": "2026-09-03T13:37:48.804-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/1985785484439323",
       "gameUrl": "https://www.roblox.com/games/863266079",
@@ -1107,13 +1108,13 @@
         "displayName": "Anniversary Survivor",
         "displayDescription": "Prepare for the rising apocalypse.",
         "enabled": true,
-        "iconImageId": 108069042024271,
-        "displayIconImageId": 108069042024271,
+        "iconImageId": 115427668486092,
+        "displayIconImageId": 115427668486092,
         "created": "2026-09-03T18:37:48.804+00:00",
-        "updated": "2026-09-18T18:25:42.154+00:00",
+        "updated": "2026-09-19T23:58:11.78+00:00",
         "statistics": {
-          "pastDayAwardedCount": 707981,
-          "awardedCount": 1483485,
+          "pastDayAwardedCount": 594831,
+          "awardedCount": 1606674,
           "winRatePercentage": 1
         },
         "awardingUniverse": {
@@ -1122,7 +1123,7 @@
           "rootPlaceId": 863266079
         }
       },
-      "fetchedAt": "2026-09-19T19:55:59.988Z",
+      "fetchedAt": "2026-09-20T02:14:50.870Z",
       "error": null,
       "stale": false
     },
@@ -1138,7 +1139,7 @@
       "note": "No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 11,
-      "created": "2026-09-09T18:35:06.343+00:00",
+      "created": "2026-09-09T13:35:06.343-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/3774948711767093",
       "gameUrl": "https://www.roblox.com/games/142823291",
@@ -1155,9 +1156,9 @@
         "created": "2026-09-09T18:35:06.343+00:00",
         "updated": "2026-09-17T21:56:41.701+00:00",
         "statistics": {
-          "pastDayAwardedCount": 4501667,
-          "awardedCount": 10510902,
-          "winRatePercentage": 0.472
+          "pastDayAwardedCount": 3986805,
+          "awardedCount": 11404566,
+          "winRatePercentage": 0.413
         },
         "awardingUniverse": {
           "id": 66654135,
@@ -1165,7 +1166,7 @@
           "rootPlaceId": 142823291
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.026Z",
+      "fetchedAt": "2026-09-20T02:14:50.944Z",
       "error": null,
       "stale": false
     },
@@ -1181,7 +1182,7 @@
       "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 2,
-      "created": "2026-09-03T17:37:07.676+00:00",
+      "created": "2026-09-03T12:37:07.676-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/3076577728413252",
       "gameUrl": "https://www.roblox.com/games/13822889",
@@ -1208,7 +1209,7 @@
           "rootPlaceId": 13822889
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.040Z",
+      "fetchedAt": "2026-09-20T02:14:50.977Z",
       "error": null,
       "stale": false
     },
@@ -1224,7 +1225,7 @@
       "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 6,
-      "created": "2026-09-03T18:18:17.292+00:00",
+      "created": "2026-09-03T13:18:17.292-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/3820258633736651",
       "gameUrl": "https://www.roblox.com/games/9689581",
@@ -1251,7 +1252,7 @@
           "rootPlaceId": 9689581
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.032Z",
+      "fetchedAt": "2026-09-20T02:14:50.985Z",
       "error": null,
       "stale": false
     },
@@ -1267,7 +1268,7 @@
       "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 10,
-      "created": "2026-09-01T22:32:24.258+00:00",
+      "created": "2026-09-01T17:32:24.258-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/2956780634054386",
       "gameUrl": "https://www.roblox.com/games/606849621",
@@ -1294,7 +1295,7 @@
           "rootPlaceId": 606849621
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.054Z",
+      "fetchedAt": "2026-09-20T02:14:51.025Z",
       "error": null,
       "stale": false
     },
@@ -1310,7 +1311,7 @@
       "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 7,
-      "created": "2026-09-03T19:28:53.214+00:00",
+      "created": "2026-09-03T14:28:53.214-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/3440043305038685",
       "gameUrl": "https://www.roblox.com/games/537413528",
@@ -1337,7 +1338,7 @@
           "rootPlaceId": 537413528
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.080Z",
+      "fetchedAt": "2026-09-20T02:14:51.087Z",
       "error": null,
       "stale": false
     },
@@ -1353,7 +1354,7 @@
       "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 9,
-      "created": "2026-09-01T17:54:43.624+00:00",
+      "created": "2026-09-01T12:54:43.624-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/2344531550519489",
       "gameUrl": "https://www.roblox.com/games/920587237",
@@ -1376,11 +1377,11 @@
         },
         "awardingUniverse": {
           "id": 383310974,
-          "name": "[2X NOW!🎉] Adopt Me!",
+          "name": "[😸] Adopt Me!",
           "rootPlaceId": 920587237
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.081Z",
+      "fetchedAt": "2026-09-20T02:14:51.126Z",
       "error": null,
       "stale": false
     },
@@ -1389,32 +1390,33 @@
       "universeId": "985731078",
       "rootPlaceId": "2727067538",
       "year": 2020,
-      "badgeId": "2153489069",
-      "badgeName": "Arcane Tower Champion",
+      "badgeId": "2124728600",
+      "badgeName": "Magma Goo",
       "group": "game",
-      "status": "unconfirmed",
-      "note": "No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.",
-      "checkedAt": "2026-09-19T19:55:59.165Z",
+      "status": "candidate",
+      "note": "Magma Goo was manually selected for World // Zero and is pinned against automatic discovery. Secret-quest role remains unconfirmed.",
+      "checkedAt": "2026-09-20T02:08:04.090Z",
       "catalogCount": 16,
-      "created": "2023-10-20T20:05:22.093+00:00",
-      "isNewest": true,
-      "badgeUrl": "https://www.roblox.com/badges/2153489069",
+      "created": "2021-04-23T21:05:15.840Z",
+      "isNewest": false,
+      "badgeUrl": "https://www.roblox.com/badges/2124728600",
       "gameUrl": "https://www.roblox.com/games/2727067538",
       "discoveryError": null,
+      "pinned": true,
       "data": {
-        "id": 2153489069,
-        "name": "Arcane Tower Champion",
-        "description": "Players who have earned this have defeated the final boss in the Arcane Tower! The Arcane Tower is located in World 10.",
-        "displayName": "Arcane Tower Champion",
-        "displayDescription": "Players who have earned this have defeated the final boss in the Arcane Tower! The Arcane Tower is located in World 10.",
+        "id": 2124728600,
+        "name": "Magma Goo",
+        "description": "abcdef",
+        "displayName": "Magma Goo",
+        "displayDescription": "abcdef",
         "enabled": true,
-        "iconImageId": 15121660724,
-        "displayIconImageId": 15121660724,
-        "created": "2023-10-20T20:05:22.093+00:00",
-        "updated": "2023-10-20T20:05:22.093+00:00",
+        "iconImageId": 6719176206,
+        "displayIconImageId": 6719176206,
+        "created": "2021-04-23T21:05:15.84+00:00",
+        "updated": "2026-09-17T16:26:52.955+00:00",
         "statistics": {
-          "pastDayAwardedCount": 160,
-          "awardedCount": 177424,
+          "pastDayAwardedCount": 0,
+          "awardedCount": 0,
           "winRatePercentage": 0
         },
         "awardingUniverse": {
@@ -1423,7 +1425,7 @@
           "rootPlaceId": 2727067538
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.101Z",
+      "fetchedAt": "2026-09-20T02:14:51.127Z",
       "error": null,
       "stale": false
     },
@@ -1433,32 +1435,33 @@
       "rootPlaceId": "4623386862",
       "year": 2021,
       "badgeId": "3494811902417077",
-      "badgeName": "R20 - ???",
+      "badgeName": "R20 - Completed House (Secret)",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed and pinned against automatic discovery.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 41,
-      "created": "2026-09-04T03:57:59.002+00:00",
+      "created": "2026-09-03T22:57:59.002-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/3494811902417077",
       "gameUrl": "https://www.roblox.com/games/4623386862",
       "discoveryError": null,
+      "pinned": true,
       "data": {
         "id": 3494811902417077,
-        "name": "R20 - ???",
-        "description": "???",
-        "displayName": "R20 - ???",
-        "displayDescription": "???",
+        "name": "R20 - Completed House (Secret)",
+        "description": "Escaped Penny's House... again.",
+        "displayName": "R20 - Completed House (Secret)",
+        "displayDescription": "Escaped Penny's House... again.",
         "enabled": true,
-        "iconImageId": 72024119814107,
-        "displayIconImageId": 72024119814107,
+        "iconImageId": 99784238970247,
+        "displayIconImageId": 99784238970247,
         "created": "2026-09-04T03:57:59.002+00:00",
-        "updated": "2026-09-17T16:05:39.962+00:00",
+        "updated": "2026-09-19T21:25:18.968+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 67878,
+          "awardedCount": 70214,
+          "winRatePercentage": 0.042
         },
         "awardingUniverse": {
           "id": 1516533665,
@@ -1466,7 +1469,7 @@
           "rootPlaceId": 4623386862
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.104Z",
+      "fetchedAt": "2026-09-20T02:14:51.169Z",
       "error": null,
       "stale": false
     },
@@ -1482,7 +1485,7 @@
       "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 2,
-      "created": "2026-09-03T20:39:15.204+00:00",
+      "created": "2026-09-03T15:39:15.204-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/2308865322054249",
       "gameUrl": "https://www.roblox.com/games/8481844229",
@@ -1509,7 +1512,7 @@
           "rootPlaceId": 8481844229
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.131Z",
+      "fetchedAt": "2026-09-20T02:14:51.231Z",
       "error": null,
       "stale": false
     },
@@ -1521,15 +1524,16 @@
       "badgeId": "1290359287112082",
       "badgeName": "dsfsffda",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed and pinned against automatic discovery.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 3,
-      "created": "2026-09-05T17:02:30.51+00:00",
+      "created": "2026-09-05T12:02:30.51-05:00",
       "isNewest": false,
       "badgeUrl": "https://www.roblox.com/badges/1290359287112082",
       "gameUrl": "https://www.roblox.com/games/13772394625",
       "discoveryError": null,
+      "pinned": true,
       "data": {
         "id": 1290359287112082,
         "name": "dsfsffda",
@@ -1542,8 +1546,8 @@
         "created": "2026-09-05T17:02:30.51+00:00",
         "updated": "2026-09-17T21:40:59.535+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
+          "pastDayAwardedCount": 27,
+          "awardedCount": 41,
           "winRatePercentage": 0
         },
         "awardingUniverse": {
@@ -1552,7 +1556,7 @@
           "rootPlaceId": 13772394625
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.135Z",
+      "fetchedAt": "2026-09-20T02:14:51.269Z",
       "error": null,
       "stale": false
     },
@@ -1568,7 +1572,7 @@
       "note": "No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 5,
-      "created": "2026-09-01T21:02:59.566+00:00",
+      "created": "2026-09-01T16:02:59.566-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/2648924952692335",
       "gameUrl": "https://www.roblox.com/games/15101393044",
@@ -1585,9 +1589,9 @@
         "created": "2026-09-01T21:02:59.566+00:00",
         "updated": "2026-09-17T20:49:41.044+00:00",
         "statistics": {
-          "pastDayAwardedCount": 1129748,
-          "awardedCount": 2158824,
-          "winRatePercentage": 0.455
+          "pastDayAwardedCount": 995825,
+          "awardedCount": 2356507,
+          "winRatePercentage": 0.415
         },
         "awardingUniverse": {
           "id": 5203828273,
@@ -1595,7 +1599,7 @@
           "rootPlaceId": 15101393044
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.140Z",
+      "fetchedAt": "2026-09-20T02:14:51.258Z",
       "error": null,
       "stale": false
     },
@@ -1611,7 +1615,7 @@
       "note": "Newest badge created alongside another event-period badge. Secret-quest role is unconfirmed.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 24,
-      "created": "2026-09-02T21:39:11.148+00:00",
+      "created": "2026-09-02T16:39:11.148-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/3405135718228192",
       "gameUrl": "https://www.roblox.com/games/126884695634066",
@@ -1638,7 +1642,7 @@
           "rootPlaceId": 126884695634066
         }
       },
-      "fetchedAt": "2026-09-19T19:56:00.193Z",
+      "fetchedAt": "2026-09-20T02:14:51.323Z",
       "error": null,
       "stale": false
     }
