@@ -44,7 +44,7 @@ export default function Home() {
   const choiceVersion = useRef(0);
   const [notice, setNotice] = useState('');
   const [completed, setCompleted] = useState<Record<string, boolean>>({});
-  const [hideCompleted, setHideCompleted] = useState(false);
+  const [hideCompleted, setHideCompleted] = useState(true);
   const [editing, setEditing] = useState<Row | null>(null);
   const [badgeInput, setBadgeInput] = useState('');
   const [markConfirmed, setMarkConfirmed] = useState(true);
@@ -54,7 +54,7 @@ export default function Home() {
   const running = useRef(false);
   const nextAt = useRef(0);
   const alive = useRef(true);
-  const [threshold, setThreshold] = useState(3);
+  const [threshold, setThreshold] = useState(5);
   const [enableNotifications, setEnableNotifications] = useState(false);
   const previousAwardCounts = useRef<Record<string, number>>({});
 
@@ -128,7 +128,7 @@ export default function Home() {
       }
       setCompleted(validCompleted);
       setHideCompleted(localStorage.getItem(HIDE_COMPLETED_KEY) === '1');
-      const savedThreshold = parseInt(localStorage.getItem(THRESHOLD_KEY) ?? '3', 10);
+      const savedThreshold = parseInt(localStorage.getItem(THRESHOLD_KEY) ?? '5', 10);
       if (savedThreshold >= 1 && savedThreshold <= 100) setThreshold(savedThreshold);
       setEnableNotifications(localStorage.getItem(NOTIFY_KEY) === '1');
       if ('Notification' in window && Notification.permission === 'default') {
@@ -271,7 +271,7 @@ export default function Home() {
             <td className="row-actions">{row.status === 'candidate' && <Button variant="outline" size="sm" onClick={() => confirm(row)} disabled={!row.data || row.stale} aria-label={`Confirm ${row.game} badge`}><Check />Confirm</Button>}{row.status === 'user-confirmed' && <span className="your-confirmation"><Check size={15} />Saved</span>}<Button variant="ghost" size="sm" onClick={() => openEditor(row)} aria-label={`${row.status === 'unconfirmed' ? 'Add' : 'Change'} badge for ${row.game}`}>{row.status === 'unconfirmed' ? <Plus /> : <Pencil />}{row.status === 'unconfirmed' ? 'Add badge' : 'Change'}</Button>{preferences[row.universeId] && <button className="reset-choice" onClick={() => reset(row)} aria-label={`Reset ${row.game} badge choice`}>Reset choice</button>}</td>
           </tr>)}</tbody></table></div>
         </TabsContent>
-        <TabsContent value="hub"><div className="section-summary"><h2>The hub collection</h2><span className="hub-label">S01 — S20</span></div><p className="catalog-note">All 20 supplied badges are awarded by The Hunt: Roblox 20 hub. Their S-numbers do not establish a mapping to individual games. Badges with {threshold}+ awards are highlighted.</p><div className="hub-grid">{hubRows.map(row => <article className={`hub-card ${row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) >= threshold ? 'active-badge' : ''}`} key={row.badgeId}><div className="hub-card-top"><GameIcon src={icons[row.universeId]} name={row.game} /><a href={row.badgeUrl!} target="_blank" rel="noreferrer">{row.data?.name ?? row.badgeName}<ArrowUpRight size={17} /></a></div><strong className="hub-total">{number(row.data?.statistics.awardedCount)}</strong><span className="hub-total-label">total awarded · {row.data ? (row.data.enabled ? 'Enabled' : 'Disabled') : 'Loading'}</span><div className="hub-day"><span>Past 24 hours</span><strong>{number(row.data?.statistics.pastDayAwardedCount)}</strong></div><span className="badge-id">{row.badgeId}</span>{row.stale && <span className="stale-note">{row.data ? 'Stale · refresh pending' : 'Unavailable · retry pending'}</span>}</article>)}</div></TabsContent>
+        <TabsContent value="hub"><div className="section-summary"><h2>The hub collection</h2><span className="hub-label">S01 — S20</span></div><p className="catalog-note">All 20 supplied badges are awarded by The Hunt: Roblox 20 hub. Their S-numbers do not establish a mapping to individual games. Badges with {threshold}+ awards are highlighted.</p><div className="hub-grid">{hubRows.map(row => <article className={`hub-card ${row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) >= threshold ? 'active-badge' : ''}`} key={row.badgeId}><div className="hub-card-top"><GameIcon src={icons[row.universeId]} name={row.game} /><a href={row.badgeUrl!} target="_blank" rel="noreferrer">{row.data?.name ?? row.badgeName}<ArrowUpRight size={17} /></a><span className="hub-game-name">{row.note}</span></div><strong className="hub-total">{number(row.data?.statistics.awardedCount)}</strong><span className="hub-total-label">total awarded · {row.data ? (row.data.enabled ? 'Enabled' : 'Disabled') : 'Loading'}</span><div className="hub-day"><span>Past 24 hours</span><strong>{number(row.data?.statistics.pastDayAwardedCount)}</strong></div><span className="badge-id">{row.badgeId}</span>{row.stale && <span className="stale-note">{row.data ? 'Stale · refresh pending' : 'Unavailable · retry pending'}</span>}</article>)}</div></TabsContent>
       </Tabs>
       <footer><p><strong>About these counts</strong> · Public Roblox awards across all players. Enabled badges may still require an unreleased quest. No player login required.</p><div><span>Catalog checked {new Date(catalogCheckedAt).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'UTC' })} UTC</span><button className="text-download" onClick={() => download('json')}>Full catalog JSON <ArrowDownToLine size={14} /></button><a href="https://create.roblox.com/docs/cloud/reference/domains/badges" target="_blank" rel="noreferrer">Roblox API <ArrowUpRight size={14} /></a></div><p className="unofficial">Independent tracker. Not affiliated with Roblox.</p></footer>
       <Dialog open={!!editing} onOpenChange={open => { if (!open && !saving) setEditing(null); }}><DialogContent className="badge-dialog"><DialogHeader><DialogTitle>Choose the secret badge</DialogTitle><DialogDescription>{editing?.game} · The badge must belong to this game.</DialogDescription></DialogHeader><form onSubmit={saveBadge}><label htmlFor="badge-input">Badge ID or Roblox badge link</label><Input id="badge-input" value={badgeInput} onChange={event => setBadgeInput(event.target.value)} placeholder="123456789 or https://www.roblox.com/badges/…" autoComplete="off" required aria-invalid={!!editError} aria-describedby={editError ? 'badge-error' : undefined} /><label className="confirm-checkbox"><Checkbox checked={markConfirmed} onCheckedChange={value => setMarkConfirmed(value === true)} />Mark this as the correct secret badge</label><p className="dialog-note">Your choice stays selected during automatic refreshes and is saved in this browser.</p>{editError && <p className="edit-error" id="badge-error" role="alert">{editError}</p>}<div className="dialog-actions"><Button type="button" variant="outline" onClick={() => setEditing(null)} disabled={saving}>Cancel</Button><Button type="submit" disabled={saving}>{saving ? 'Checking badge…' : 'Save badge'}</Button></div></form></DialogContent></Dialog>
