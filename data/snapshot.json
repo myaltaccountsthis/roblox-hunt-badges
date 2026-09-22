@@ -1092,9 +1092,9 @@
       "badgeId": "1108428691360808",
       "badgeName": "Rotten Beans",
       "group": "game",
-      "status": "candidate",
-      "note": "Newest badge created alongside another event-period badge. Secret-quest role is unconfirmed.",
-      "checkedAt": "2026-09-22T14:14:52.568Z",
+      "status": "confirmed",
+      "note": "Marked as a secret quest at the user's request based on substantial award activity (22,112 awards when checked). Pinned against automatic discovery; this designation is not an official Roblox confirmation.",
+      "checkedAt": "2026-09-22T14:47:46.795Z",
       "catalogCount": 4,
       "created": "2026-09-03T18:37:57.587+00:00",
       "isNewest": true,
@@ -1114,7 +1114,7 @@
         "updated": "2026-09-22T06:40:10.904+00:00",
         "statistics": {
           "pastDayAwardedCount": 19265,
-          "awardedCount": 20117,
+          "awardedCount": 22112,
           "winRatePercentage": 0.085
         },
         "awardingUniverse": {
@@ -1123,9 +1123,10 @@
           "rootPlaceId": 863266079
         }
       },
-      "fetchedAt": "2026-09-22T14:14:52.824Z",
+      "fetchedAt": "2026-09-22T14:47:46.794Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Murder Mystery 2",
@@ -1219,11 +1220,11 @@
       "rootPlaceId": "9689581",
       "year": 2016,
       "badgeId": "3820258633736651",
-      "badgeName": "LoyaltyBadge",
+      "badgeName": "Secrets from the Vault",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
-      "checkedAt": "2026-09-19T19:55:59.165Z",
+      "status": "confirmed",
+      "note": "Marked as a secret quest at the user's request based on substantial award activity (25,918 awards when checked). Pinned against automatic discovery; this designation is not an official Roblox confirmation.",
+      "checkedAt": "2026-09-22T14:47:46.818Z",
       "catalogCount": 6,
       "created": "2026-09-03T13:18:17.292-05:00",
       "isNewest": true,
@@ -1232,19 +1233,19 @@
       "discoveryError": null,
       "data": {
         "id": 3820258633736651,
-        "name": "LoyaltyBadge",
-        "description": null,
-        "displayName": "LoyaltyBadge",
-        "displayDescription": null,
+        "name": "Secrets from the Vault",
+        "description": "Many secrets become lost to time forever, but your smarts have allowed you to save one valuable fragment of knowledge from falling to such a fate.",
+        "displayName": "Secrets from the Vault",
+        "displayDescription": "Many secrets become lost to time forever, but your smarts have allowed you to save one valuable fragment of knowledge from falling to such a fate.",
         "enabled": true,
-        "iconImageId": 118488295868225,
-        "displayIconImageId": 118488295868225,
+        "iconImageId": 114777559923771,
+        "displayIconImageId": 114777559923771,
         "created": "2026-09-03T18:18:17.292+00:00",
-        "updated": "2026-09-17T15:53:10.916+00:00",
+        "updated": "2026-09-22T09:12:25.471+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 21988,
+          "awardedCount": 25918,
+          "winRatePercentage": 0.23
         },
         "awardingUniverse": {
           "id": 16371559,
@@ -1252,9 +1253,10 @@
           "rootPlaceId": 9689581
         }
       },
-      "fetchedAt": "2026-09-20T02:14:50.985Z",
+      "fetchedAt": "2026-09-22T14:47:46.793Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Jailbreak",
@@ -1264,8 +1266,8 @@
       "badgeId": "2956780634054386",
       "badgeName": "Unknown R20 Badge",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed at the user's request and pinned against automatic discovery.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 10,
       "created": "2026-09-01T17:32:24.258-05:00",
@@ -1297,7 +1299,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:51.025Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Build A Boat For Treasure",
@@ -1348,11 +1351,11 @@
       "rootPlaceId": "920587237",
       "year": 2019,
       "badgeId": "2344531550519489",
-      "badgeName": "Badge",
+      "badgeName": "Roblox 20 Eggburt's Quest",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
-      "checkedAt": "2026-09-19T19:55:59.165Z",
+      "status": "confirmed",
+      "note": "Marked as a secret quest at the user's request based on substantial award activity (107,096 awards when checked). Pinned against automatic discovery; this designation is not an official Roblox confirmation.",
+      "checkedAt": "2026-09-22T14:47:46.818Z",
       "catalogCount": 9,
       "created": "2026-09-01T12:54:43.624-05:00",
       "isNewest": true,
@@ -1361,29 +1364,30 @@
       "discoveryError": null,
       "data": {
         "id": 2344531550519489,
-        "name": "Badge",
+        "name": "Roblox 20 Eggburt's Quest",
         "description": null,
-        "displayName": "Badge",
+        "displayName": "Roblox 20 Eggburt's Quest",
         "displayDescription": null,
         "enabled": true,
-        "iconImageId": 118488295868225,
-        "displayIconImageId": 118488295868225,
+        "iconImageId": 132733818157502,
+        "displayIconImageId": 132733818157502,
         "created": "2026-09-01T17:54:43.624+00:00",
-        "updated": "2026-09-17T16:00:20.061+00:00",
+        "updated": "2026-09-22T03:11:34.784+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 96637,
+          "awardedCount": 107096,
+          "winRatePercentage": 0.044
         },
         "awardingUniverse": {
           "id": 383310974,
-          "name": "[😸] Adopt Me!",
+          "name": "[🐈] Adopt Me!",
           "rootPlaceId": 920587237
         }
       },
-      "fetchedAt": "2026-09-20T02:14:51.126Z",
+      "fetchedAt": "2026-09-22T14:47:46.795Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "World // Zero",
@@ -1568,9 +1572,9 @@
       "badgeId": "2905113986457612",
       "badgeName": "Blast From the Past",
       "group": "game",
-      "status": "candidate",
-      "note": "Newest badge created alongside another event-period badge. Secret-quest role is unconfirmed.",
-      "checkedAt": "2026-09-22T14:14:52.715Z",
+      "status": "confirmed",
+      "note": "Marked as a secret quest at the user's request based on substantial award activity (67,054 awards when checked). Pinned against automatic discovery; this designation is not an official Roblox confirmation.",
+      "checkedAt": "2026-09-22T14:47:46.818Z",
       "catalogCount": 6,
       "created": "2026-09-01T21:03:10.28+00:00",
       "isNewest": true,
@@ -1589,8 +1593,8 @@
         "created": "2026-09-01T21:03:10.28+00:00",
         "updated": "2026-09-22T03:28:50.212+00:00",
         "statistics": {
-          "pastDayAwardedCount": 58685,
-          "awardedCount": 61289,
+          "pastDayAwardedCount": 58675,
+          "awardedCount": 67054,
           "winRatePercentage": 0.047
         },
         "awardingUniverse": {
@@ -1599,9 +1603,10 @@
           "rootPlaceId": 15101393044
         }
       },
-      "fetchedAt": "2026-09-22T14:14:52.823Z",
+      "fetchedAt": "2026-09-22T14:47:46.788Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Grow a Garden",

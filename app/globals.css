@@ -79,3 +79,15 @@ tr.active-badge:hover { background:#fff7d8; }
 .completion-empty { padding:24px; text-align:center; color:#526885; font-size:15px; }
 .completion-empty button { background:none; border:0; color:#2454da; text-decoration:underline; text-underline-offset:3px; }
 @media(max-width:760px) { td:nth-child(5):not(:last-child) { grid-column:1/-1; grid-row:4; display:flex; justify-content:flex-start; gap:9px; } td:nth-child(5):not(:last-child)::after { content:'Completed'; font-size:14px; } }
+
+.activity-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.activity-list { list-style:none; padding:0; margin:0; background:#fff; border:1px solid #d1dcec; border-radius:10px; }
+.activity-list li { display:flex; align-items:center; gap:16px; padding:16px 20px; border-bottom:1px solid #e7edf6; }
+.activity-list li:last-child { border-bottom:0; }
+.activity-list li>div:first-child { flex:1; min-width:0; }
+.activity-list a { display:flex; align-items:center; gap:4px; color:#526885; font-size:13px; overflow-wrap:anywhere; }
+.activity-list time { display:block; color:#647793; font-size:12px; margin-top:5px; }
+.activity-count { text-align:right; font-variant-numeric:tabular-nums; }
+.activity-count strong { display:block; color:#226354; }
+.activity-count span { font-size:12px; color:#647793; }
+@media(max-width:640px) { .activity-list li { flex-wrap:wrap; padding:14px; } .tabs-row { flex-wrap:wrap; } .tab-list [data-slot="tabs-trigger"] { padding:0 10px; } }
