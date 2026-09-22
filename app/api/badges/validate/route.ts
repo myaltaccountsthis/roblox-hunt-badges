@@ -3,7 +3,7 @@ import { enforceGlobalRateLimit } from '@/lib/rate-limit';
 export const dynamic = 'force-dynamic';
 export async function POST(request: Request) {
   const limited = enforceGlobalRateLimit(5000);
-  if (!limited.ok) return Response.json({ error: 'Too many requests. Please wait a moment.' }, { status: 429, headers: { 'Cache-Control': 'no-store', 'Retry-After': String(limited.retryAfterSeconds) } });
+  if (!limited.ok) return Response.json({ error: 'Rate limited. Please wait a moment before trying again.' }, { status: 429, headers: { 'Cache-Control': 'no-store', 'Retry-After': String(limited.retryAfterSeconds) } });
   try {
     const body = await request.text();
     if (body.length > 512) throw new Error('Badge selection is too long');

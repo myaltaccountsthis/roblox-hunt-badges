@@ -21,6 +21,7 @@ const THRESHOLD_KEY = 'roblox20-highlight-threshold-v1';
 const NOTIFY_KEY = 'roblox20-enable-notifications-v1';
 const NOTIFY_COUNTS_KEY = 'roblox20-notification-counts-v1';
 const NOTIFY_SOUND_KEY = 'roblox20-notification-sound-v1';
+const COUNT_HISTORY_KEY = 'roblox20-badge-counts-v1';
 const gameUniverseIds = new Set(catalog.badges.filter(b => b.group === 'game').map(b => b.universeId));
 
 function Identity({ row }: { row: Row }) {
@@ -63,11 +64,31 @@ export default function Home() {
   const audioContext = useRef<AudioContext | null>(null);
   const notificationBaselinePending = useRef(false);
   const previousAwardCounts = useRef<Record<string, number>>({});
+  const previousDisplayedCounts = useRef<Record<string, number>>({});
+  const [countChanges, setCountChanges] = useState<Record<string, number>>({});
 
   const getAwardCounts = (source: Row[]) => Object.fromEntries(source.filter(row => row.badgeId && row.data).map(row => [row.badgeId!, row.data!.statistics.awardedCount])) as Record<string, number>;
   const saveAwardCounts = (counts: Record<string, number>) => {
     previousAwardCounts.current = counts;
     try { localStorage.setItem(NOTIFY_COUNTS_KEY, JSON.stringify(counts)); } catch {}
+  };
+  const trackAwardChanges = (source: Row[]) => {
+    const counts = getAwardCounts(source);
+    const changes: Record<string, number> = {};
+    for (const [badgeId, current] of Object.entries(counts)) {
+      const previous = previousDisplayedCounts.current[badgeId];
+      if (previous !== undefined && previous !== current) changes[badgeId] = current - previous;
+    }
+    previousDisplayedCounts.current = counts;
+    try { localStorage.setItem(COUNT_HISTORY_KEY, JSON.stringify(counts)); } catch {}
+    setCountChanges(changes);
+  };
+  const countChangeStyle = (change: number, current: number) => {
+    if (change <= 0) return undefined;
+    const previous = Math.max(1, current - change);
+    const percentGain = (change / previous) * 100;
+    const intensity = Math.min(1, Math.log2(percentGain + 1) / Math.log2(11));
+    return { color: "hsl(151 " + Math.round(24 + intensity * 46) + "% " + Math.round(42 - intensity * 12) + "%)" };
   };
   const getAudioContext = () => {
     if (typeof window === 'undefined') return null;
@@ -134,7 +155,7 @@ export default function Home() {
     try {
       const selections = Object.entries(prefsRef.current).map(([universeId, choice]) => ({ universeId, badgeId: choice.badgeId }));
       const response = await fetch(`/api/badges${force ? '?force=1' : ''}`, { method: selections.length ? 'POST' : 'GET', ...(selections.length ? { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ selections }) } : {}), cache: 'no-store', signal: AbortSignal.timeout(120000) });
-      if (!response.ok) throw new Error(`Refresh failed (${response.status}). Your previous results are still shown.`);
+      if (!response.ok) throw new Error(response.status === 429 ? "You are refreshing too quickly. Please wait a few seconds before trying again. Your previous results are still shown; automatic refresh will retry." : `Refresh failed (${response.status}). Your previous results are still shown.`);
       const result: Snapshot = await response.json();
       if (!Array.isArray(result.badges) || result.badges.length !== catalog.badges.length) throw new Error('The response was incomplete. Your previous results are still shown.');
       if (!alive.current) return;
@@ -143,6 +164,7 @@ export default function Home() {
         const prior = rows.find(item => item.badgeId === row.badgeId);
         return row.stale && !row.data && prior?.data ? { ...row, data: prior.data, fetchedAt: prior.fetchedAt } : row;
       });
+      trackAwardChanges(newRows);
       checkAndNotify(newRows);
       setRows(newRows);
       setCheckedAt(result.checkedAt);
@@ -187,6 +209,12 @@ export default function Home() {
       }
       previousAwardCounts.current = validCounts;
       notificationBaselinePending.current = notificationsEnabled && Object.keys(validCounts).length === 0;
+      const savedDisplayCounts = JSON.parse(localStorage.getItem(COUNT_HISTORY_KEY) ?? '{}');
+      const validDisplayCounts: Record<string, number> = {};
+      if (savedDisplayCounts && typeof savedDisplayCounts === 'object' && !Array.isArray(savedDisplayCounts)) for (const [badgeId, value] of Object.entries(savedDisplayCounts)) {
+        if (/^[1-9]\d{0,19}$/.test(badgeId) && typeof value === 'number' && Number.isFinite(value) && value >= 0) validDisplayCounts[badgeId] = value;
+      }
+      previousDisplayedCounts.current = validDisplayCounts;
       if ('Notification' in window && Notification.permission === 'default') {
         Notification.requestPermission();
       }
@@ -339,13 +367,13 @@ export default function Home() {
           <div className="table-wrap"><table><caption className="sr-only">Event game badge award counts. Candidate and reference badges are not confirmed secret quests.</caption><thead><tr><th>EVENT GAME / BADGE</th><th>IDENTIFICATION</th><th className="numeric">TOTAL AWARDED</th><th className="numeric">PAST 24 HOURS</th><th>COMPLETED</th><th>YOUR CHOICE</th></tr></thead><tbody>{visibleGameRows.map(row => <tr key={row.universeId} className={`${row.stale ? 'stale-row' : ''} ${row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) >= threshold ? 'active-badge' : ''}`}>
             <td><div className="game-cell"><div className="game-visual"><GameIcon src={icons[row.universeId]} name={row.game} /><span className="year">{row.year}</span></div><div className="badge-description"><a className="game-name" href={row.gameUrl} target="_blank" rel="noreferrer">{row.game}<ArrowUpRight size={13} /></a><a className="badge-name" href={row.badgeUrl ?? row.gameUrl} target="_blank" rel="noreferrer">{row.data?.name ?? row.badgeName}</a><span className="badge-id">{row.badgeId ?? 'No public badge'} · {row.data ? (row.data.enabled ? 'Enabled' : 'Disabled') : 'Loading'}</span>{row.stale && <span className="stale-note" title={row.error ?? ''}>{row.data ? `Stale · last updated ${time(row.fetchedAt ?? null)}` : 'Unavailable · retrying next refresh'}</span>}</div></div></td>
             <td><Identity row={row} /><details className="badge-note"><summary>Why this badge?</summary><p>{row.note}</p>{row.discoveryError && <p>{row.discoveryError}</p>}</details>{row.isNewest === false && <span className="selection-note">Newer badge excluded</span>}</td>
-            <td className="numeric"><span className="total-value">{number(row.data?.statistics.awardedCount)}</span>{row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) >= threshold && <span className="award-signal">{threshold}+ awarded</span>}</td><td className="numeric"><span className="day-value">{number(row.data?.statistics.pastDayAwardedCount)}</span></td>
+            <td className="numeric"><span className="total-value">{number(row.data?.statistics.awardedCount)}{row.badgeId && countChanges[row.badgeId] ? <span className={'count-change ' + (countChanges[row.badgeId] > 0 ? 'increase' : 'decrease')} style={countChangeStyle(countChanges[row.badgeId], row.data?.statistics.awardedCount ?? 0)}>{countChanges[row.badgeId] > 0 ? '+' : ''}{number(countChanges[row.badgeId])}</span> : null}</span>{row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) >= threshold && <span className="award-signal">{threshold}+ awarded</span>}</td><td className="numeric"><span className="day-value">{number(row.data?.statistics.pastDayAwardedCount)}</span></td>
             <td className="row-actions"><Checkbox checked={isCompleted(row)} onCheckedChange={value => setCompletedBadge(row, value === true)} aria-label={`Mark ${row.game} as completed`} disabled={!row.badgeId} /></td>
             <td className="row-actions">{row.status === 'candidate' && <Button variant="outline" size="sm" onClick={() => confirm(row)} disabled={!row.data || row.stale} aria-label={`Confirm ${row.game} badge`}><Check />Confirm</Button>}{row.status === 'user-confirmed' && <span className="your-confirmation"><Check size={15} />Saved</span>}<Button variant="ghost" size="sm" onClick={() => openEditor(row)} aria-label={`${row.status === 'unconfirmed' ? 'Add' : 'Change'} badge for ${row.game}`}>{row.status === 'unconfirmed' ? <Plus /> : <Pencil />}{row.status === 'unconfirmed' ? 'Add badge' : 'Change'}</Button>{preferences[row.universeId] && <button className="reset-choice" onClick={() => reset(row)} aria-label={`Reset ${row.game} badge choice`}>Reset choice</button>}</td>
           </tr>)}</tbody></table></div>
           {visibleGameRows.length === 0 && <p className="completion-empty">All game badges are completed. <button onClick={() => setHideCompletedPreference(false)}>Show completed badges</button></p>}
         </TabsContent>
-        <TabsContent value="hub"><div className="section-summary"><h2>The hub collection</h2><span className="hub-label">S01 — S20</span></div><p className="catalog-note">All 20 supplied badges are awarded by The Hunt: Roblox 20 hub. Their S-numbers do not establish a mapping to individual games. Badges with {threshold}+ awards are yellow; badges you complete have a green outline.</p><div className="hub-grid">{visibleHubRows.map(row => <article className={`hub-card ${isCompleted(row) ? 'completed-badge' : row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) >= threshold ? 'active-badge' : ''}`} key={row.badgeId}><div className="hub-card-top"><GameIcon src={icons[row.universeId]} name={row.game} /><a href={row.badgeUrl!} target="_blank" rel="noreferrer">{row.data?.name ?? row.badgeName}<ArrowUpRight size={17} /></a><span className="hub-game-name">{row.note}</span></div><strong className="hub-total">{number(row.data?.statistics.awardedCount)}</strong><span className="hub-total-label">total awarded · {row.data ? (row.data.enabled ? 'Enabled' : 'Disabled') : 'Loading'}</span><div className="hub-day"><span>Past 24 hours</span><strong>{number(row.data?.statistics.pastDayAwardedCount)}</strong></div><span className="badge-id">{row.badgeId}</span>{row.stale && <span className="stale-note">{row.data ? 'Stale · refresh pending' : 'Unavailable · retry pending'}</span>}<label className="hub-completion"><Checkbox checked={isCompleted(row)} onCheckedChange={value => setCompletedBadge(row, value === true)} aria-label={`Mark ${row.badgeName} as completed`} disabled={!row.badgeId} />Completed</label></article>)}</div>{visibleHubRows.length === 0 && <p className="completion-empty">All hub badges are completed. <button onClick={() => setHideCompletedPreference(false)}>Show completed badges</button></p>}</TabsContent>
+        <TabsContent value="hub"><div className="section-summary"><h2>The hub collection</h2><span className="hub-label">S01 — S20</span></div><p className="catalog-note">All 20 supplied badges are awarded by The Hunt: Roblox 20 hub. Their S-numbers do not establish a mapping to individual games. Badges with {threshold}+ awards are yellow; badges you complete have a green outline.</p><div className="hub-grid">{visibleHubRows.map(row => <article className={`hub-card ${isCompleted(row) ? 'completed-badge' : row.status !== 'unconfirmed' && (row.data?.statistics.awardedCount ?? 0) >= threshold ? 'active-badge' : ''}`} key={row.badgeId}><div className="hub-card-top"><GameIcon src={icons[row.universeId]} name={row.game} /><a href={row.badgeUrl!} target="_blank" rel="noreferrer">{row.data?.name ?? row.badgeName}<ArrowUpRight size={17} /></a><span className="hub-game-name">{row.note}</span></div><strong className="hub-total">{number(row.data?.statistics.awardedCount)}{row.badgeId && countChanges[row.badgeId] ? <span className={'count-change ' + (countChanges[row.badgeId] > 0 ? 'increase' : 'decrease')} style={countChangeStyle(countChanges[row.badgeId], row.data?.statistics.awardedCount ?? 0)}>{countChanges[row.badgeId] > 0 ? '+' : ''}{number(countChanges[row.badgeId])}</span> : null}</strong><span className="hub-total-label">total awarded · {row.data ? (row.data.enabled ? 'Enabled' : 'Disabled') : 'Loading'}</span><div className="hub-day"><span>Past 24 hours</span><strong>{number(row.data?.statistics.pastDayAwardedCount)}</strong></div><span className="badge-id">{row.badgeId}</span>{row.stale && <span className="stale-note">{row.data ? 'Stale · refresh pending' : 'Unavailable · retry pending'}</span>}<label className="hub-completion"><Checkbox checked={isCompleted(row)} onCheckedChange={value => setCompletedBadge(row, value === true)} aria-label={`Mark ${row.badgeName} as completed`} disabled={!row.badgeId} />Completed</label></article>)}</div>{visibleHubRows.length === 0 && <p className="completion-empty">All hub badges are completed. <button onClick={() => setHideCompletedPreference(false)}>Show completed badges</button></p>}</TabsContent>
       </Tabs>
       <footer><p><strong>About these counts</strong> · Public Roblox awards across all players. Enabled badges may still require an unreleased quest. No player login required.</p><div><span>Catalog checked {new Date(catalogCheckedAt).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'UTC' })} UTC</span><button className="text-download" onClick={() => download('json')}>Full catalog JSON <ArrowDownToLine size={14} /></button><a href="https://create.roblox.com/docs/cloud/reference/domains/badges" target="_blank" rel="noreferrer">Roblox API <ArrowUpRight size={14} /></a></div><p className="unofficial">Independent tracker. Not affiliated with Roblox.</p></footer>
       <Dialog open={!!editing} onOpenChange={open => { if (!open && !saving) setEditing(null); }}><DialogContent className="badge-dialog"><DialogHeader><DialogTitle>Choose the secret badge</DialogTitle><DialogDescription>{editing?.game} · The badge must belong to this game.</DialogDescription></DialogHeader><form onSubmit={saveBadge}><label htmlFor="badge-input">Badge ID or Roblox badge link</label><Input id="badge-input" value={badgeInput} onChange={event => setBadgeInput(event.target.value)} placeholder="123456789 or https://www.roblox.com/badges/…" autoComplete="off" required aria-invalid={!!editError} aria-describedby={editError ? 'badge-error' : undefined} /><label className="confirm-checkbox"><Checkbox checked={markConfirmed} onCheckedChange={value => setMarkConfirmed(value === true)} />Mark this as the correct secret badge</label><p className="dialog-note">Your choice stays selected during automatic refreshes and is saved in this browser.</p>{editError && <p className="edit-error" id="badge-error" role="alert">{editError}</p>}<div className="dialog-actions"><Button type="button" variant="outline" onClick={() => setEditing(null)} disabled={saving}>Cancel</Button><Button type="submit" disabled={saving}>{saving ? 'Checking badge…' : 'Save badge'}</Button></div></form></DialogContent></Dialog>

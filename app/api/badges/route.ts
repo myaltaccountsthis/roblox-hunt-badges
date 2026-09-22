@@ -5,14 +5,14 @@ const headers = { 'Cache-Control': 'no-store' };
 
 export async function GET(request: Request) {
   const limited = enforceGlobalRateLimit(5000);
-  if (!limited.ok) return Response.json({ error: 'Too many refresh requests. Please wait a moment.' }, { status: 429, headers: { ...headers, 'Retry-After': String(limited.retryAfterSeconds) } });
+  if (!limited.ok) return Response.json({ error: 'You are refreshing too quickly. Please wait a few seconds before trying again.' }, { status: 429, headers: { ...headers, 'Retry-After': String(limited.retryAfterSeconds) } });
   try { return Response.json(await getSnapshot(new URL(request.url).searchParams.get('force') === '1'), { headers }); }
   catch { return Response.json({ error: 'Refresh failed. Try again shortly.' }, { status: 502, headers }); }
 }
 
 export async function POST(request: Request) {
   const limited = enforceGlobalRateLimit(5000);
-  if (!limited.ok) return Response.json({ error: 'Too many refresh requests. Please wait a moment.' }, { status: 429, headers: { ...headers, 'Retry-After': String(limited.retryAfterSeconds) } });
+  if (!limited.ok) return Response.json({ error: 'You are refreshing too quickly. Please wait a few seconds before trying again.' }, { status: 429, headers: { ...headers, 'Retry-After': String(limited.retryAfterSeconds) } });
   let selections;
   try {
     const body = await request.text();
