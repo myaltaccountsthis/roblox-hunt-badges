@@ -1046,33 +1046,34 @@
       "universeId": "29676957",
       "rootPlaceId": "18164449",
       "year": 2012,
-      "badgeId": "4449519854199008",
-      "badgeName": "Completed The Hunt 20 Event!",
+      "badgeId": "4361658936974448",
+      "badgeName": "The Trials",
       "group": "game",
-      "status": "unconfirmed",
-      "note": "No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.",
-      "checkedAt": "2026-09-19T19:55:59.165Z",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed at the user's request and pinned against automatic discovery.",
+      "checkedAt": "2026-09-24T16:35:09.878Z",
       "catalogCount": 37,
       "created": "2026-09-02T23:53:43.89-05:00",
       "isNewest": true,
-      "badgeUrl": "https://www.roblox.com/badges/4449519854199008",
+      "badgeUrl": "https://www.roblox.com/badges/4361658936974448",
       "gameUrl": "https://www.roblox.com/games/18164449",
       "discoveryError": null,
+      "pinned": true,
       "data": {
-        "id": 4449519854199008,
-        "name": "Completed The Hunt 20 Event!",
-        "description": "You've successfully competed in Skirmish and earned your classic gear! Happy 20 Years of roblox and 17 years of Base Wars!",
-        "displayName": "Completed The Hunt 20 Event!",
-        "displayDescription": "You've successfully competed in Skirmish and earned your classic gear! Happy 20 Years of roblox and 17 years of Base Wars!",
+        "id": 4361658936974448,
+        "name": "The Trials",
+        "description": "With the help of an unlikely ally, dismantle the opposition.",
+        "displayName": "The Trials",
+        "displayDescription": "With the help of an unlikely ally, dismantle the opposition.",
         "enabled": true,
-        "iconImageId": 119432602090898,
-        "displayIconImageId": 119432602090898,
-        "created": "2026-09-03T04:53:43.89+00:00",
-        "updated": "2026-09-17T20:48:35.674+00:00",
+        "iconImageId": 99515637905309,
+        "displayIconImageId": 99515637905309,
+        "created": "2026-09-03T04:54:28.944+00:00",
+        "updated": "2026-09-23T19:08:54.292+00:00",
         "statistics": {
-          "pastDayAwardedCount": 797455,
-          "awardedCount": 2215413,
-          "winRatePercentage": 1
+          "pastDayAwardedCount": 27050,
+          "awardedCount": 28383,
+          "winRatePercentage": 0.21
         },
         "awardingUniverse": {
           "id": 29676957,
@@ -1080,7 +1081,7 @@
           "rootPlaceId": 18164449
         }
       },
-      "fetchedAt": "2026-09-20T02:14:50.837Z",
+      "fetchedAt": "2026-09-24T16:35:27.776Z",
       "error": null,
       "stale": false
     },
@@ -1395,11 +1396,11 @@
       "rootPlaceId": "2727067538",
       "year": 2020,
       "badgeId": "2124728600",
-      "badgeName": "Magma Goo",
+      "badgeName": "Heart of Fire",
       "group": "game",
-      "status": "candidate",
-      "note": "Magma Goo was manually selected for World // Zero and is pinned against automatic discovery. Secret-quest role remains unconfirmed.",
-      "checkedAt": "2026-09-20T02:08:04.090Z",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed at the user's request and pinned against automatic discovery.",
+      "checkedAt": "2026-09-24T16:35:09.936Z",
       "catalogCount": 16,
       "created": "2021-04-23T21:05:15.840Z",
       "isNewest": false,
@@ -1409,19 +1410,19 @@
       "pinned": true,
       "data": {
         "id": 2124728600,
-        "name": "Magma Goo",
-        "description": "abcdef",
-        "displayName": "Magma Goo",
-        "displayDescription": "abcdef",
+        "name": "Heart of Fire",
+        "description": "Save the Town and collect the Heart of Fire!",
+        "displayName": "Heart of Fire",
+        "displayDescription": "Save the Town and collect the Heart of Fire!",
         "enabled": true,
-        "iconImageId": 6719176206,
-        "displayIconImageId": 6719176206,
+        "iconImageId": 128507703478863,
+        "displayIconImageId": 128507703478863,
         "created": "2021-04-23T21:05:15.84+00:00",
-        "updated": "2026-09-17T16:26:52.955+00:00",
+        "updated": "2026-09-23T22:12:29.497+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 51705,
+          "awardedCount": 53753,
+          "winRatePercentage": 0.576
         },
         "awardingUniverse": {
           "id": 985731078,
@@ -1429,7 +1430,7 @@
           "rootPlaceId": 2727067538
         }
       },
-      "fetchedAt": "2026-09-20T02:14:51.127Z",
+      "fetchedAt": "2026-09-24T16:35:27.773Z",
       "error": null,
       "stale": false
     },
@@ -1485,15 +1486,16 @@
       "badgeId": "2308865322054249",
       "badgeName": "Badge",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
-      "checkedAt": "2026-09-19T19:55:59.165Z",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed at the user's request and pinned against automatic discovery.",
+      "checkedAt": "2026-09-24T16:35:09.974Z",
       "catalogCount": 2,
       "created": "2026-09-03T15:39:15.204-05:00",
       "isNewest": true,
       "badgeUrl": "https://www.roblox.com/badges/2308865322054249",
       "gameUrl": "https://www.roblox.com/games/8481844229",
       "discoveryError": null,
+      "pinned": true,
       "data": {
         "id": 2308865322054249,
         "name": "Badge",
@@ -1506,9 +1508,9 @@
         "created": "2026-09-03T20:39:15.204+00:00",
         "updated": "2026-09-17T16:26:51.68+00:00",
         "statistics": {
-          "pastDayAwardedCount": 0,
-          "awardedCount": 0,
-          "winRatePercentage": 0
+          "pastDayAwardedCount": 66776,
+          "awardedCount": 69911,
+          "winRatePercentage": 0.078
         },
         "awardingUniverse": {
           "id": 3240075297,
@@ -1516,7 +1518,7 @@
           "rootPlaceId": 8481844229
         }
       },
-      "fetchedAt": "2026-09-20T02:14:51.231Z",
+      "fetchedAt": "2026-09-24T16:35:27.777Z",
       "error": null,
       "stale": false
     },
