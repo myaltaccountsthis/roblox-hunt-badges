@@ -91,3 +91,28 @@ tr.active-badge:hover { background:#fff7d8; }
 .activity-count strong { display:block; color:#226354; }
 .activity-count span { font-size:12px; color:#647793; }
 @media(max-width:640px) { .activity-list li { flex-wrap:wrap; padding:14px; } .tabs-row { flex-wrap:wrap; } .tab-list [data-slot="tabs-trigger"] { padding:0 10px; } }
+
+.details-toggle { display:flex; align-items:center; gap:8px; font-size:13px; color:#526885; cursor:pointer; white-space:nowrap; }
+.help-trigger { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; padding:0; border:0; background:transparent; color:#6980a1; }
+.help-trigger:hover { color:#2454da; }
+.hide-details .details-cell { display:none; }
+@media(max-width:760px) { .hide-details td.details-cell::before { display:none; } }
+
+.hub-card-top a { font-size:17px; line-height:1.25; min-width:0; flex:1; overflow-wrap:anywhere; }
+
+.completion-toolbar { column-gap:3px; }
+.hub-card { display:flex; flex-direction:column; }
+.hub-card-top { height:145px; align-content:flex-start; align-items:flex-start; }
+.hub-total { margin-top:0; }
+.hub-completion { margin-top:auto; }
+
+.hub-rewards { grid-template-columns:repeat(2,minmax(0,1fr)); max-width:490px; }
+@media(min-width:1001px) { .hub-card-top { height:82px; } .hub-rewards .hub-card-top { height:55px; } }
+@media(min-width:761px) and (max-width:1000px) { .hub-card-top { height:115px; } .hub-rewards .hub-card-top { height:60px; } }
+@media(max-width:760px) { .hub-rewards { max-width:none; } }
+
+@media(min-width:761px) and (max-width:1280px) { .hub-grid { grid-template-columns:repeat(4,minmax(0,1fr)); } .hub-rewards { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+@media(max-width:760px) { .hub-card-top { height:clamp(90px,calc(300px - 35vw),145px); } }
+
+@media(min-width:1281px) { .hub-card-top { height:94px; } }

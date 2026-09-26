@@ -1,12 +1,90 @@
 {
-  "checkedAt": "2026-09-20T02:14:51.323Z",
-  "catalogCheckedAt": "2026-09-19T19:55:59.165Z",
+  "checkedAt": "2026-09-25T23:52:02.263Z",
+  "catalogCheckedAt": "2026-09-25T23:52:02.263Z",
   "badges": [
     {
-      "badgeId": "788444728772728",
-      "badgeName": "S01",
+      "badgeId": "244677413669115",
+      "badgeName": "Dominus Infinitum",
       "group": "hub",
       "status": "provided",
+      "game": "The Hunt: Roblox 20",
+      "universeId": "10766456501",
+      "rootPlaceId": "74205509034203",
+      "year": null,
+      "note": "Hub item badge awarded for attaining Dominus Infinitum.",
+      "checkedAt": "2026-09-25T23:52:02.263Z",
+      "badgeUrl": "https://www.roblox.com/badges/244677413669115",
+      "gameUrl": "https://www.roblox.com/games/74205509034203",
+      "data": {
+        "id": 244677413669115,
+        "name": "Dominus Infinitum",
+        "description": "Ab initio, ad vicesimus. Awarded for attaining this item in The Hunt: Roblox 20.",
+        "displayName": "Dominus Infinitum",
+        "displayDescription": "Ab initio, ad vicesimus. Awarded for attaining this item in The Hunt: Roblox 20.",
+        "enabled": true,
+        "iconImageId": 131754756839599,
+        "displayIconImageId": 131754756839599,
+        "created": "2026-09-16T19:28:18.885+00:00",
+        "updated": "2026-09-25T22:14:23.273+00:00",
+        "statistics": {
+          "pastDayAwardedCount": 0,
+          "awardedCount": 0,
+          "winRatePercentage": 0
+        },
+        "awardingUniverse": {
+          "id": 10766456501,
+          "name": "The Hunt: Roblox 20",
+          "rootPlaceId": 74205509034203
+        }
+      },
+      "fetchedAt": "2026-09-25T23:52:02.604Z",
+      "error": null,
+      "stale": false
+    },
+    {
+      "badgeId": "2398335401043156",
+      "badgeName": "Amictus Infinitum",
+      "group": "hub",
+      "status": "provided",
+      "game": "The Hunt: Roblox 20",
+      "universeId": "10766456501",
+      "rootPlaceId": "74205509034203",
+      "year": null,
+      "note": "Hub item badge awarded for attaining Amictus Infinitum.",
+      "checkedAt": "2026-09-25T23:52:02.263Z",
+      "badgeUrl": "https://www.roblox.com/badges/2398335401043156",
+      "gameUrl": "https://www.roblox.com/games/74205509034203",
+      "data": {
+        "id": 2398335401043156,
+        "name": "Amictus Infinitum",
+        "description": "Awarded for attaining this item in The Hunt: Roblox 20.",
+        "displayName": "Amictus Infinitum",
+        "displayDescription": "Awarded for attaining this item in The Hunt: Roblox 20.",
+        "enabled": true,
+        "iconImageId": 96151115371254,
+        "displayIconImageId": 96151115371254,
+        "created": "2026-09-16T19:28:34.381+00:00",
+        "updated": "2026-09-25T22:13:50.503+00:00",
+        "statistics": {
+          "pastDayAwardedCount": 0,
+          "awardedCount": 0,
+          "winRatePercentage": 0
+        },
+        "awardingUniverse": {
+          "id": 10766456501,
+          "name": "The Hunt: Roblox 20",
+          "rootPlaceId": 74205509034203
+        }
+      },
+      "fetchedAt": "2026-09-25T23:52:02.627Z",
+      "error": null,
+      "stale": false
+    },
+    {
+      "badgeId": "788444728772728",
+      "badgeName": "Original Web Elements",
+      "group": "hub",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -17,7 +95,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 788444728772728,
-        "name": "S01",
+        "name": "Original Web Elements",
         "description": null,
         "displayName": "S01",
         "displayDescription": null,
@@ -43,9 +121,9 @@
     },
     {
       "badgeId": "854647440808329",
-      "badgeName": "S02",
+      "badgeName": "How To Build A Happy Home",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -56,7 +134,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 854647440808329,
-        "name": "S02",
+        "name": "How To Build A Happy Home",
         "description": null,
         "displayName": "S02",
         "displayDescription": null,
@@ -82,9 +160,9 @@
     },
     {
       "badgeId": "2874537913586721",
-      "badgeName": "S03",
+      "badgeName": "The Eggsplorer's Paintball Mask",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -95,7 +173,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 2874537913586721,
-        "name": "S03",
+        "name": "The Eggsplorer's Paintball Mask",
         "description": null,
         "displayName": "S03",
         "displayDescription": null,
@@ -121,9 +199,9 @@
     },
     {
       "badgeId": "197788328316229",
-      "badgeName": "S04",
+      "badgeName": "The Three Clubs",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -134,7 +212,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 197788328316229,
-        "name": "S04",
+        "name": "The Three Clubs",
         "description": null,
         "displayName": "S04",
         "displayDescription": null,
@@ -160,9 +238,9 @@
     },
     {
       "badgeId": "2237888773337343",
-      "badgeName": "S05",
+      "badgeName": "Gear Hoarder Loadout Belt",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -173,7 +251,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 2237888773337343,
-        "name": "S05",
+        "name": "Gear Hoarder Loadout Belt",
         "description": null,
         "displayName": "S05",
         "displayDescription": null,
@@ -199,9 +277,9 @@
     },
     {
       "badgeId": "1439816114867036",
-      "badgeName": "S06",
+      "badgeName": "Personal Safety Spikes",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -212,7 +290,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 1439816114867036,
-        "name": "S06",
+        "name": "Personal Safety Spikes",
         "description": null,
         "displayName": "S06",
         "displayDescription": null,
@@ -238,9 +316,9 @@
     },
     {
       "badgeId": "2677851507722761",
-      "badgeName": "S07",
+      "badgeName": "Quad Sword Aura",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -251,7 +329,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 2677851507722761,
-        "name": "S07",
+        "name": "Quad Sword Aura",
         "description": null,
         "displayName": "S07",
         "displayDescription": null,
@@ -277,9 +355,9 @@
     },
     {
       "badgeId": "1719653187423190",
-      "badgeName": "S08",
+      "badgeName": "The Magic of Creation",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -290,7 +368,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 1719653187423190,
-        "name": "S08",
+        "name": "The Magic of Creation",
         "description": null,
         "displayName": "S08",
         "displayDescription": null,
@@ -316,9 +394,9 @@
     },
     {
       "badgeId": "2250297984172921",
-      "badgeName": "S09",
+      "badgeName": "The Year of the Bloxxer",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -329,7 +407,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 2250297984172921,
-        "name": "S09",
+        "name": "The Year of the Bloxxer",
         "description": null,
         "displayName": "S09",
         "displayDescription": null,
@@ -355,9 +433,9 @@
     },
     {
       "badgeId": "973955333235103",
-      "badgeName": "S10",
+      "badgeName": "Chest of Overflowing Loot",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -368,7 +446,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 973955333235103,
-        "name": "S10",
+        "name": "Chest of Overflowing Loot",
         "description": null,
         "displayName": "S10",
         "displayDescription": null,
@@ -394,9 +472,9 @@
     },
     {
       "badgeId": "1991530753845746",
-      "badgeName": "S11",
+      "badgeName": "Team Create Workstation",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -407,7 +485,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 1991530753845746,
-        "name": "S11",
+        "name": "Team Create Workstation",
         "description": null,
         "displayName": "S11",
         "displayDescription": null,
@@ -433,9 +511,9 @@
     },
     {
       "badgeId": "2971308898705223",
-      "badgeName": "S12",
+      "badgeName": "Defective Despacito Spiders",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -446,7 +524,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 2971308898705223,
-        "name": "S12",
+        "name": "Defective Despacito Spiders",
         "description": null,
         "displayName": "S12",
         "displayDescription": null,
@@ -472,9 +550,9 @@
     },
     {
       "badgeId": "308225565184426",
-      "badgeName": "S13",
+      "badgeName": "The Archivist's Handbook",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -485,7 +563,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 308225565184426,
-        "name": "S13",
+        "name": "The Archivist's Handbook",
         "description": null,
         "displayName": "S13",
         "displayDescription": null,
@@ -511,9 +589,9 @@
     },
     {
       "badgeId": "3162193440550804",
-      "badgeName": "S14",
+      "badgeName": "Towering Pillar of UGC",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -524,7 +602,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 3162193440550804,
-        "name": "S14",
+        "name": "Towering Pillar of UGC",
         "description": null,
         "displayName": "S14",
         "displayDescription": null,
@@ -550,9 +628,9 @@
     },
     {
       "badgeId": "389109338362080",
-      "badgeName": "S15",
+      "badgeName": "Neo Virtual Headliner",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -563,7 +641,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 389109338362080,
-        "name": "S15",
+        "name": "Neo Virtual Headliner",
         "description": null,
         "displayName": "S15",
         "displayDescription": null,
@@ -589,9 +667,9 @@
     },
     {
       "badgeId": "1070119183239664",
-      "badgeName": "S16",
+      "badgeName": "Sparkwave Headset",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -602,7 +680,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 1070119183239664,
-        "name": "S16",
+        "name": "Sparkwave Headset",
         "description": null,
         "displayName": "S16",
         "displayDescription": null,
@@ -628,9 +706,9 @@
     },
     {
       "badgeId": "3178004040363002",
-      "badgeName": "S17",
+      "badgeName": "Sounds of the Past",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -641,7 +719,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 3178004040363002,
-        "name": "S17",
+        "name": "Sounds of the Past",
         "description": null,
         "displayName": "S17",
         "displayDescription": null,
@@ -667,9 +745,9 @@
     },
     {
       "badgeId": "1246917220157214",
-      "badgeName": "S18",
+      "badgeName": "Hands-On Experience",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -680,7 +758,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 1246917220157214,
-        "name": "S18",
+        "name": "Hands-On Experience",
         "description": null,
         "displayName": "S18",
         "displayDescription": null,
@@ -706,9 +784,9 @@
     },
     {
       "badgeId": "1301021780785777",
-      "badgeName": "S19",
+      "badgeName": "Crown of Petals",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -719,7 +797,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 1301021780785777,
-        "name": "S19",
+        "name": "Crown of Petals",
         "description": null,
         "displayName": "S19",
         "displayDescription": null,
@@ -745,9 +823,9 @@
     },
     {
       "badgeId": "3699804200217169",
-      "badgeName": "S20",
+      "badgeName": "The Huntmaster's Visor",
       "group": "hub",
-      "status": "provided",
+      "status": "confirmed",
       "game": "The Hunt: Roblox 20",
       "universeId": "10766456501",
       "rootPlaceId": "74205509034203",
@@ -758,7 +836,7 @@
       "gameUrl": "https://www.roblox.com/games/74205509034203",
       "data": {
         "id": 3699804200217169,
-        "name": "S20",
+        "name": "The Huntmaster's Visor",
         "description": null,
         "displayName": "S20",
         "displayDescription": null,
@@ -823,7 +901,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:50.672Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Sword Fights on the Heights IV",
@@ -866,7 +945,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:50.700Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Rocket Arena",
@@ -909,7 +989,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:50.695Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Chaos Canyon",
@@ -952,7 +1033,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:50.746Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Work at a Pizza Place",
@@ -960,7 +1042,7 @@
       "rootPlaceId": "192800",
       "year": 2010,
       "badgeId": "1139187141620288",
-      "badgeName": "Recipe Retribution",
+      "badgeName": "honeypot",
       "group": "game",
       "status": "confirmed",
       "note": "Secret quest badge confirmed and pinned against automatic discovery.",
@@ -1039,7 +1121,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:50.842Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Base Wars: The Land!",
@@ -1137,8 +1220,8 @@
       "badgeId": "3774948711767093",
       "badgeName": "Roblox 20 Quest",
       "group": "game",
-      "status": "unconfirmed",
-      "note": "No identifiable secret badge is currently exposed in this game catalog. Tracking the newest visible badge as a reference only; it may be a main quest or unrelated.",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed at the user's request and pinned against automatic discovery.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 11,
       "created": "2026-09-09T13:35:06.343-05:00",
@@ -1170,7 +1253,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:50.944Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Lumber Tycoon 2",
@@ -1180,8 +1264,8 @@
       "badgeId": "3076577728413252",
       "badgeName": "b",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed at the user's request and pinned against automatic discovery.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 2,
       "created": "2026-09-03T12:37:07.676-05:00",
@@ -1213,7 +1297,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:50.977Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Roblox High School",
@@ -1311,8 +1396,8 @@
       "badgeId": "3440043305038685",
       "badgeName": "Test",
       "group": "game",
-      "status": "candidate",
-      "note": "Likely secret badge: recently created with an obscure or placeholder name. This is an inference, not a confirmed secret-quest identification.",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed at the user's request and pinned against automatic discovery.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 7,
       "created": "2026-09-03T14:28:53.214-05:00",
@@ -1344,7 +1429,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:51.087Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     },
     {
       "game": "Adopt Me!",
@@ -1440,7 +1526,7 @@
       "rootPlaceId": "4623386862",
       "year": 2021,
       "badgeId": "3494811902417077",
-      "badgeName": "R20 - Completed House (Secret)",
+      "badgeName": "R20 - ???",
       "group": "game",
       "status": "confirmed",
       "note": "Secret quest badge confirmed and pinned against automatic discovery.",
@@ -1618,8 +1704,8 @@
       "badgeId": "3405135718228192",
       "badgeName": "Purchased Grandmaster Sprinkler!",
       "group": "game",
-      "status": "candidate",
-      "note": "Newest badge created alongside another event-period badge. Secret-quest role is unconfirmed.",
+      "status": "confirmed",
+      "note": "Secret quest badge confirmed at the user's request and pinned against automatic discovery.",
       "checkedAt": "2026-09-19T19:55:59.165Z",
       "catalogCount": 24,
       "created": "2026-09-02T16:39:11.148-05:00",
@@ -1651,7 +1737,8 @@
       },
       "fetchedAt": "2026-09-20T02:14:51.323Z",
       "error": null,
-      "stale": false
+      "stale": false,
+      "pinned": true
     }
   ]
 }

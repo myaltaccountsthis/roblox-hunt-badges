@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import { HUB_IDS, chooseSecret, gameEntry, fetchBadges, idString, mapLimit, parseGames, request } from '../lib/roblox.mjs';
+import { HUB_IDS, HUB_BONUS, chooseSecret, gameEntry, fetchBadges, idString, mapLimit, parseGames, request } from '../lib/roblox.mjs';
 
 const badge = (id, name, created, description = null) => ({ id, name, created, description });
 const main = badge(1, 'Completed The Hunt 20 Quest!', '2026-09-05');
@@ -38,17 +38,17 @@ await request('https://example.test', false, async () => ++attempts === 1 ? new 
 assert.equal(attempts, 2, '429 responses retry with bounded backoff');
 
 const catalog = JSON.parse(await fs.readFile(new URL('../data/badges.json', import.meta.url), 'utf8'));
-assert.equal(catalog.badges.length, 40);
-assert.deepEqual(catalog.badges.filter(b => b.group === 'hub').map(b => b.badgeId), HUB_IDS);
-assert.equal(new Set(catalog.badges.map(b => b.badgeId)).size, 40);
+assert.equal(catalog.badges.length, 42);
+assert.deepEqual(catalog.badges.filter(b => b.group === 'hub').map(b => b.badgeId), [...HUB_BONUS.map(b => b.badgeId), ...HUB_IDS]);
+assert.equal(new Set(catalog.badges.map(b => b.badgeId)).size, 42);
 assert.equal(catalog.badges.filter(b => b.group === 'game').length, 20);
-console.log('Checks passed: candidate selection, parsing, ID precision, concurrency, retries, stale data, and all 40 catalog entries.');
+console.log('Checks passed: candidate selection, parsing, ID precision, concurrency, retries, stale data, and all 42 catalog entries.');
 
 const worldZeroPin = catalog.badges.find(row => row.universeId === '985731078');
 assert.equal(worldZeroPin.badgeId, '2124728600');
 const rediscovered = gameEntry(worldZeroPin, [badge(2153489069, 'Arcane Tower Champion', '2023-10-20')], new Date().toISOString());
 assert.equal(rediscovered.badgeId, '2124728600', 'Automatic discovery must preserve the manually pinned Magma Goo ID');
-assert.equal(rediscovered.badgeName, 'Magma Goo');
+assert.equal(rediscovered.badgeName, 'Heart of Fire');
 const unpinned = gameEntry({ ...worldZeroPin, pinned: false }, [badge(2153489069, 'Arcane Tower Champion', '2023-10-20')], new Date().toISOString());
 assert.equal(unpinned.badgeId, '2153489069', 'Unpinned entries should still use automatic discovery');
 console.log('Pinned World Zero selection survives discovery; automatic selection still works for unpinned entries.');
